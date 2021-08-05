@@ -3,7 +3,7 @@
     src: url('Raleway-VariableFont_wght.ttf');
 }
 body{
-    padding-left: 4%;
+    padding: 2%;
 }
 header{
     display: flex;
@@ -30,7 +30,7 @@ h1{
     font-family: sans-serif;
     font-size: 20px;
 }
-h1 +p{
+h1 + p{
     font-family: 'Raleway';
     font-size: 17px;
 }
@@ -48,10 +48,10 @@ h1 +p{
 
 }
 /* .fas est l'icon de localisation dans la barre de recherche*/
-.fas {
+.barre_recherche .fas {
     background-color: rgb(242, 242, 242);
     padding: 20px;
-font-size: 18px;
+    font-size: 18px;
 }
 input{
     padding: 15px;
@@ -148,16 +148,109 @@ input + p{
 
 
 }
-section{
-    padding: 20px 20px 20px 40px;
+.premier_section_plus_aside{
+    display: flex;
+    flex-direction: row;
+}
+.Hebergements_Marseille{
     background-color: rgb(242,242,242,242);
     border-radius: 14px;
+    width: 725px;
+    margin-right:33px ;
+
 }
-section h1{
-    font-size: 20px;
+
+.Hebergements_Marseille h2{
+    padding: 35px;
+    font-size:19px;
+    font-weight: 559;
     font-family: 'Raleway';
 
 }
+.LesHebergementsGrille{
+    padding-left: 32px;
+    display: flex;
+    flex-direction: row;
+}
+.UnHebergement{
+    position: relative;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color:white ;
+    overflow: hidden;
+    min-width: 194px;
+    height: 180px;
+    margin-right: 24px;
 
+}
+.cadreImageHebergement{
+    position: absolute;
+    bottom:70px;
+    left: -20px;
+    display: flex;
+    justify-content: center;
+}
+.cadreImageHebergement img{
+    width: 260px;
 
+ }
+ .TitreHebergement{
+     font-size: 13px;
+     font-weight: 570;
+    position: absolute;
+    top:100px;
+    left: 8px;
+    background-color: white;
+    font-family: 'Raleway';
 
+}
+.TarifHebergement{
+    font-size:11px;
+    font-family: 'Raleway';
+    position: absolute;
+    top:123px;
+
+    left: 8px;
+    
+
+}
+.TarifHebergement span{
+    font-weight: 550;
+}
+.etoiles{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:160px;
+    left: 9px;
+    color:rgb(66, 87, 248);
+}
+.etoiles .etoileOff{
+    color:rgb(217, 217, 217)
+}
+.Hebergements_populaires{
+    background-color: rgb(242, 242, 242);
+    width: 340px;
+    height: 500px;
+    border-radius: 14px;
+
+}
+.titrePopulaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.titrePopulaire h2{
+
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 530;
+}
+.titrePopulaire .fas{
+    font-size: 18px;
+}
