@@ -36,48 +36,128 @@ h1 +p{
 }
 
 .barre_recherche{
-    border-radius: 14px;
     display: flex;
-    flex-direction: row;
-    border: 1px;
-    
-    width: 20%;
-
-}
-.barre_recherche input{
-    font-size: 20px;
-}
-
-.logo{
-    min-width: 50px;
-    max-height: 60px;
-    background-color: rgb(189, 176, 176);
-
-}
-.Recherche{
-
+    align-items: center;
+    overflow:hidden;
+    border-style: solid;
+    border-color:lightgray;
+    border-width: 1px;
     border-radius: 14px;
-    background-color: cornflowerblue;
+    height: 50px;
+    width: 380px;
 
 }
-.Recherche p{
-    padding: 5px 20px 5px 20px;
+/* .fas est l'icon de localisation dans la barre de recherche*/
+.fas {
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+font-size: 18px;
+}
+input{
+    padding: 15px;
     font-family: 'Raleway';
-    color: cornsilk;
-
+    font-size: 18px;
+    font-weight: 580;
+    height: 50px;
+    width: 180px;
+    border: none;
 }
-.Filtres{
-
+input + p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Raleway';
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 440;
+    color: white;
+    height: 200px;
+    width: 420px;
+    background-color: rgb(66,87,255);
+
+
+}
+
+
+.FiltresBar{
     display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 590;
+   
 }
 .vignette{
-    padding-left:50px ;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border-width: 2px;
+    border-radius: 50px;
+    border-style: solid;
+    border-left: none;
+    border-color: rgb(217, 217, 217);
+    height: 50px;
 }
-.Filtres + p{
+.vignette p{
+    margin-right: 10px;
+}
+.vignette i{
+    color: rgb(66, 87, 248);
+    background-color: rgb(224, 234, 254);
+    margin-right:10px;
+    padding: 18px;
+    border-radius: 40px;
+    font-weight: 350;
+}
+.vignette .far {
+    font-size: 20px;
+}
+.vignette img{
+    background-color: rgb(224, 234, 254);
+    margin-right:10px;
+    padding: 18px;
+    border-radius: 40px;
+    font-weight: 350;
+    width: 20px;
+}
+.logements_count {
+    display: flex;
+    align-items: center;
+}
+.logements_count p{
     font-family: 'Raleway';
     font-weight: 200;
     font-size: 16px;
 }
+.logements_count i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18px;
+    width: 18px;
+    color: rgb(66, 87, 248);
+    background-color: white;
+    margin-right:10px;
+    border-radius: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(217, 217, 217);
+    font-size: 13px;
+    padding: 5px 5px 5px 5px ;
+
+
+}
+section{
+    padding: 20px 20px 20px 40px;
+    background-color: rgb(242,242,242,242);
+    border-radius: 14px;
+}
+section h1{
+    font-size: 20px;
+    font-family: 'Raleway';
+
+}
+
+
+
