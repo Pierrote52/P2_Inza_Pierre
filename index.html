@@ -2,7 +2,8 @@
 <head>
     <meta charset="utf-8"/>
     <title>Reservia</title>
-    <link rel = "stylesheet" href= "style.css" >
+    <link rel = "stylesheet" href= "style.css" />
+    <link rel= "stylesheet" media= "screen and (max-width: 980px)" href= "styleSmartphone.css"/>
     <!-- <script src="https://kit.fontawesome.com/b4a909c7bc.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet "href= "css/all.min.css">
     
@@ -12,27 +13,35 @@
     <div class = 'corps'>
     <header>
         <a href=""><img src = 'images/logo/Reservia@3x.png' alt = 'logo de Reserva'/></a>
-        <nav>
-            <p><a href ="#Hebergement">Hebergement</a></p>
-            <p><a href="#Activités">Activités</a></p>
+        <nav class = "DesktopNav">
+            <p class = "hebergement"><a href ="#Hebergement">Hebergements</a></p>
+            <p class = "activités"><a href="#Activités">Activités</a></p>
             <a href = ""><p class ="Inscription">S'inscrire</p></a>
         </nav>
+        
 
     </header>
+    <nav class = "NavMobil">
+        <p><a href ="#Hebergement">Hébergement</a></p>
+        <p><a href="#Activités">Activités</a></p>
+    </nav>
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre ville ou pleine nature</p>
+    <p>En plein centre ville ou en pleine nature</p>
     <div class="barre_recherche">
         <i class="fas fa-map-marker-alt"></i>
         <input type="text" value="Marseille, France"/>
-        <a href = ""><p>Rechercher</p></a>
+        <a href = ""><p class = "recherche">Rechercher</p></a>
+        <a class = "displayLoupe" href= ""><i class="fas fa-search"></i></a>
 
     </div>
     <div class = "FiltresBar">
         <p>Filtres</p>
+        <div class = "lesVignettes">
         <div class = "vignette"><i class="fas fa-money-bill-wave"></i><p>Economique</p></div>
         <div class = "vignette"><i class="fas fa-child"></i><p>Familial</p></div>
-        <div class = "vignette"><img  src = 'images/heart.png' alt ="Icon Heart"/><p>Romantique</p></div>
+        <div class = "vignette"><img src = 'images/heart.png' alt ="Icon Heart"/><p>Romantique</p></div>
         <div class = "vignette"><i class="fas fa-dog"></i><p>Animaux autorisés</p></div>
+    </div>
     </div>
     <h2 class= 'logements_count'><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</h2>
     <div class = "premier_section_plus_aside">
@@ -115,7 +124,7 @@
                     </div>
                 </div></div>
             </article></a>
-            <a href = ""><article>
+            <a href = ""><article class = "dernier">
                 <div class = "ArticleImage"><img class = "Amina" src="images/hebergements/4_small/Hôtel_chez_Amina.jpg" alt="Hotel chez Amina"/></div>
                 <div class = "Informations">
                     <div class= "contenueInfo">
@@ -133,7 +142,7 @@
         
         </div>
     
-        <h2><a href="">Afficher plus</a></h2>
+        <h2 class = "dernier"><a href="">Afficher plus</a></h2>
     </section>
     <aside class = "Hebergements_populaires">
        <div class = "titrePopulaire"><h2>Les plus populaires</h2><a href = ""><i class="fas fa-chart-line"></i></a></div>
@@ -191,7 +200,7 @@
     <section class = "Activités_à_Marseille">
         <h2 id = "Activités">Activités à marseille</h2>
         <div  class ="Les_Activités">
-            <a><figure class = "Vieux_port">
+            <a href=""><figure class = "Vieux_port">
                 <div class = "CadragePourVieuxPort"><img src="images/activites/3_medium/vieuxPort.jpg" alt = "Photo du vieux Port de Marseille"></div>
                 <figcaption class = "TitreImage">
                     <p>Vieux Port </p>
@@ -207,21 +216,21 @@
             <a href=""><figure class = "îles_du_Frioul">
                 <div class = "CadrageDuFrioul"><img src="images/activites/3_medium/Iles_de_Frioul.jpg" alt = "Photo ïles du Frioul "></div>
                 <figcaption class = "TitreImage">
-                    <p>Îles du frioul</p>
+                    <p>Îles du Frioul</p>
                 </figcaption>
             </figure></a>
         </div>
         <a href=""><figure class = "Parc_National_des_calanques">
             <div class = "CadrageCalanques"><img src="images/activites/3_medium/Parc_National_des_Calanques.jpg" alt = "Photo des Calanques "></div>
             <figcaption class = "TitreImage">
-                <p>Parc National des calanques</p>
+                <p>Parc National des Calanques</p>
             </figcaption>
         </figure></a>
         <div class = "troisieme_colone">
             <a href=""><figure class = "Notre_Dame_de_la_Garde">
                 <div class = "CadrageNotreDame"><img src="images/activites/3_medium/Notre_Dame_de_la_guarde.jpg" alt = "Photo Notre Dame de la Guarde"></div>
                 <figcaption class = "TitreImage">
-                    <p>Notre-Dame-de-la-Guarde</p>
+                    <p>Notre-Dame-de-la-Garde</p>
                 </figcaption>
             </figure></a>
             <a href=""><figure class = "Parc_Longchamp">

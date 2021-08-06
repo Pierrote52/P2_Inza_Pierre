@@ -5,6 +5,9 @@
 .corps{
     padding: 2%;
 }
+.NavMobil{
+    display:none
+}
 header{
     display: flex;
     flex-direction: row;
@@ -48,6 +51,7 @@ h1 + p{
     font-size: 17px;
 }
 
+
 .barre_recherche{
     display: flex;
     align-items: center;
@@ -60,6 +64,9 @@ h1 + p{
     width: 380px;
     margin-bottom: 30px;
 
+}
+.barre_recherche a + .displayLoupe {
+    display: none
 }
 /* .fas est l'icon de localisation dans la barre de recherche*/
 .barre_recherche .fas {
@@ -94,6 +101,7 @@ input + a{
 
 .FiltresBar{
     display: flex;
+    flex-direction: row;
     align-items: center;
 
     overflow: hidden;
@@ -101,6 +109,10 @@ input + a{
     font-size: 16px;
     font-weight: 590;
    
+}
+.lesVignettes{
+    display: flex;
+    flex-direction: row;
 }
 .vignette{
     margin: 20px;
@@ -117,15 +129,6 @@ input + a{
 
 .vignette:hover{
     transform: scale(1.14);
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    border-width: 2px;
-    border-radius: 50px;
-    border-style: solid;
-    border-left: none;
-    border-color: rgb(217, 217, 217);
-    height: 50px;
 }
 .vignette p{
     margin-right: 10px;
@@ -692,4 +695,5 @@ footer{
 .TitreColone{
     font-weight: 550;
 }
+
 
