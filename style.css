@@ -2,7 +2,7 @@
     font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf');
 }
-body{
+.corps{
     padding: 2%;
 }
 header{
@@ -13,8 +13,7 @@ header{
 
 }
 header img{
-    padding-top: 3% ;
-    width: 7%;
+    width: 100px;
 }
 nav{
     display: flex;
@@ -27,10 +26,13 @@ nav p {
     padding: 10px;
 }
 h1{
+    margin-top:20px ;
     font-family: sans-serif;
     font-size: 20px;
+    margin-bottom: 0;
 }
 h1 + p{
+    margin-bottom: 35px;
     font-family: 'Raleway';
     font-size: 17px;
 }
@@ -45,6 +47,7 @@ h1 + p{
     border-radius: 14px;
     height: 50px;
     width: 380px;
+    margin-bottom: 30px;
 
 }
 /* .fas est l'icon de localisation dans la barre de recherche*/
@@ -204,6 +207,24 @@ input + p{
     left: -10px;
     position: absolute;
 }
+.LesHebergementsGrille article .ArticleImage .HotelDeLaMer{
+
+    height: 190px;
+    top:-55px;
+    left: 0px;
+    position: absolute;
+
+
+}
+.LesHebergementsGrille article .ArticleImage .Amina{
+
+    position: absolute;
+    width: 200px;
+    top:-100px
+
+
+}
+
 
 .LesHebergementsGrille article .Informations{
     position: absolute;
@@ -313,6 +334,11 @@ input + p{
 
     width: 180px;
     z-index: 1;
+}
+.vignettePopulaire .ToutBleuEtBlanc{
+    width: 110px;
+    top:-30px;
+    left: 0px;
 }
 .DescriptionEtNotation{
    flex-wrap: wrap;
@@ -582,5 +608,22 @@ input + p{
     left:0px;
     width: 240px;
 }
+footer{
+    display: flex;
+    background-color: rgb(242,242,242,242);
+    margin: 0;
+    font-family: 'Raleway';
+    font-size: 12px;
+}
+.coloneFooter{
+    margin-right: 10%;
+    margin-left:40px ;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
 
+}
+.TitreColone{
+    font-weight: 550;
+}
 
