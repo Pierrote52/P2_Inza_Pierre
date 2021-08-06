@@ -25,6 +25,17 @@ nav p {
     font-family: 'Raleway';
     padding: 10px;
 }
+a{
+    
+  outline: none;
+  text-decoration: none;
+  color: black;
+    
+}
+nav .Inscription{
+    color:rgb(66, 87, 248);
+    font-weight: 600;
+}
 h1{
     margin-top:20px ;
     font-family: sans-serif;
@@ -65,7 +76,7 @@ input{
     width: 180px;
     border: none;
 }
-input + p{
+input + a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +103,20 @@ input + p{
    
 }
 .vignette{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    border-width: 2px;
+    border-radius: 50px;
+    border-style: solid;
+    border-left: none;
+    border-color: rgb(217, 217, 217);
+    height: 50px;
+  transition: transform 400ms ease-in-out 100ms
+}
+
+.vignette:hover{
+    transform: scale(1.14);
     margin: 20px;
     display: flex;
     align-items: center;
@@ -128,10 +153,10 @@ input + p{
     display: flex;
     align-items: center;
 }
-.logements_count p{
+.logements_count {
     font-family: 'Raleway';
     font-weight: 200;
-    font-size: 16px;
+    font-size: 15px;
 }
 .logements_count i{
     display: flex;
@@ -148,7 +173,12 @@ input + p{
     border-color: rgb(217, 217, 217);
     font-size: 13px;
     padding: 5px 5px 5px 5px ;
+    transition: transform 400ms;
 
+
+}
+.logements_count i:hover{
+    transform: scale(1.1)
 
 }
 .premier_section_plus_aside{
@@ -192,8 +222,12 @@ input + p{
     border-style: solid;
     border-radius: 14px;
     border-width: 5px;
+    transition: transform 400ms;
     
 } 
+.LesHebergementsGrille article:hover{
+    transform: scale(1.04)
+}
 .LesHebergementsGrille article .ArticleImage{
     overflow: hidden;
     height : 95px;
@@ -326,7 +360,11 @@ input + p{
     width: 275px;
     position: relative;
     overflow: hidden;
+    transition: transform 400ms;
 
+}
+.vignettePopulaire:hover{
+    transform: scale(1.04);
 }
 .vignettePopulaire img{
     position: absolute;
@@ -397,21 +435,23 @@ input + p{
 
     border-radius: 14px;
     width: 1130px;
-    height: 450px;
+    height: 460px;
 
     padding: 27px;
     overflow: hidden;
 }
 .Les_Activités{
     display: flex;
-    height: 600px;
+    height: 620px;
 
 
 }
+
 .Activités_à_Marseille h2{
     font-family: 'Raleway';
     font-size: 20px;
     font-weight: 550;
+    padding-top:50px ;
 
 
 }
@@ -424,11 +464,16 @@ input + p{
     border-radius: 14px;
     overflow: hidden;
     height: 360px;
-    width: 23%;
+    width: 250px;
     
     background-color: white;
     margin: 10px;
 
+    transition: transform 400ms;
+
+}
+.Activités_à_Marseille .Vieux_port:hover{
+    transform: scale(1.04);
 }
 .Activités_à_Marseille .Vieux_port .CadragePourVieuxPort{
     position: relative;
@@ -466,7 +511,11 @@ input + p{
 
     background-color: white;
     margin: 10px;
+    transition: transform 400ms;
 
+}
+.Activités_à_Marseille .FortDePomègues:hover{
+    transform: scale(1.04);
 }
 .Activités_à_Marseille .FortDePomègues .CadrageFortDePomègues{
 
@@ -493,7 +542,11 @@ input + p{
     height: 155px;
     background-color: white;
     margin: 10px;
+    transition: transform 400ms;
 
+}
+.Activités_à_Marseille .îles_du_Frioul:hover{
+    transform: scale(1.04);
 }
 
 .Activités_à_Marseille .îles_du_Frioul .CadrageDuFrioul{
@@ -526,16 +579,21 @@ input + p{
     border-radius: 14px;
     overflow: hidden;
     height: 360px;
-    width: 23%;
+    width: 250px;
     background-color: white;
     margin: 10px;
+    transition: transform 400ms;
 
 }
 .Activités_à_Marseille .Parc_National_des_calanques .CadrageCalanques{
     position: relative;
     height: 340px;
     overflow: hidden;
+    
 
+}
+.Activités_à_Marseille .Parc_National_des_calanques:hover{
+    transform:scale(1.04)
 }
 
 
@@ -566,7 +624,11 @@ input + p{
 
     background-color: white;
     margin: 10px;
+    transition: transform 400ms;
 
+}
+.Activités_à_Marseille .Notre_Dame_de_la_Garde:hover{
+    transform:scale(1.04) ;
 }
 .Activités_à_Marseille .Notre_Dame_de_la_Garde .CadrageNotreDame{
 
@@ -592,7 +654,11 @@ input + p{
     height: 155px;
     background-color: white;
     margin: 10px;
+    transition: transform 400ms;
 
+}
+.Activités_à_Marseille .Parc_Longchamp:hover{
+    transform: scale(1.04);
 }
 
 .Activités_à_Marseille .Parc_Longchamp .CadrageParc_Longchamp{
