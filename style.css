@@ -169,83 +169,118 @@ input + p{
 }
 .LesHebergementsGrille{
     padding-left: 32px;
+    padding-bottom: 32px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
-.UnHebergement{
+.LesHebergementsGrille article{
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 20px;
+    margin-top: 20px;
     position: relative;
-    align-items: center;
-    justify-content:flex-start;
-    background-color: white;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color:white ;
-    overflow: hidden;
-    min-width: 194px;
-    height: 180px;
-    margin-right: 24px;
-
-}
-.cadreImageHebergement{
-    position: absolute;
-    bottom:70px;
-    left: -20px;
     display: flex;
-    justify-content: center;
-}
-.cadreImageHebergement img{
-    width: 260px;
-
- }
- .TitreHebergement{
-     font-size: 13px;
-     font-weight: 570;
-    position: absolute;
-    top:100px;
-    left: 8px;
-    background-color: white;
-    font-family: 'Raleway';
-
-}
-.TarifHebergement{
-    font-size:11px;
-    font-family: 'Raleway';
-    position: absolute;
-    top:123px;
-
-    left: 8px;
+    flex-direction: column;
+    overflow: hidden;
+    width: 200px;
+    height: 160px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 14px;
+    border-width: 5px;
     
+} 
+.LesHebergementsGrille article .ArticleImage{
+    overflow: hidden;
+    height : 95px;
+    position: relative;
+    z-index: 1;
 
 }
-.TarifHebergement span{
-    font-weight: 550;
+.LesHebergementsGrille article .ArticleImage .Cannebiere{
+    height: 140px;
+    top:-24px;
+    left: -10px;
+    position: absolute;
 }
-.etoiles{
+
+.LesHebergementsGrille article .Informations{
+    position: absolute;
+    background-color:white ;
+    top:40px;
+    height: 150px;
+    width: 300px;
+
+}
+.LesHebergementsGrille article .Informations .contenueInfo{
+    position: relative;
+}
+.LesHebergementsGrille article .Informations h2{
+    position: absolute;
+    font-family: 'Raleway';
+    font-size: 13px;
+    font-weight: 590;
+    top: 15px;
+    left: -24px;
+}
+.LesHebergementsGrille article .Informations h3{
+
+    position: absolute;
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-weight: 300;
+    top:72px;
+    left:10px
+
+
+}
+.LesHebergementsGrille article .Informations h3 span{
+
+    font-weight: 550;
+
+
+}
+.LesHebergementsGrille article .Informations .etoiles{
+
+    position: absolute;
+    font-family: 'Raleway';
+    font-size: 5px;
+    top: 106px;
+    left: 10px;
     font-size: 10px;
     display: flex;
     flex-direction: row;
     position: absolute;
-    top:160px;
-    left: 9px;
     color:rgb(66, 87, 248);
+
 }
-.etoiles .etoileOff{
-    color:rgb(217, 217, 217)
+.LesHebergementsGrille article .Informations .etoiles .etoileOff{
+    color: rgb(217, 217, 217)
+
 }
+
+
+/* ICI COMMENCE LE CSS POUR LE ASIDE DES HEBERGEMENTS POPULAIRES*/
+
 .Hebergements_populaires{
+    padding-top: 35px;
     background-color: rgb(242, 242, 242);
     width: 340px;
-    height: 500px;
+    height: 630px;
     border-radius: 14px;
 
 }
+
+/*Titre du Aside pour les hebergements populaires*/
+
 .titrePopulaire{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 .titrePopulaire h2{
+    
 
     font-family: 'Raleway';
     font-size: 18px;
@@ -254,3 +289,139 @@ input + p{
 .titrePopulaire .fas{
     font-size: 18px;
 }
+/* Vignette dans le Aside*/
+
+.vignettePopulaire{
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    display: flex;
+    background-color: white;
+    margin: 35px;
+    height: 120px;
+    width: 275px;
+    position: relative;
+    overflow: hidden;
+
+}
+.vignettePopulaire img{
+    position: absolute;
+    left: -40px;
+
+    width: 180px;
+    z-index: 1;
+}
+.DescriptionEtNotation{
+   flex-wrap: wrap;
+    position: absolute;
+    margin-left: 15px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    width: 170px;
+    height: 120px;
+    right: 0px;
+}
+.DescriptionEtNotation h2{
+    padding-left: 15px;
+    position: relative;
+    top:-10px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 550;
+    
+}
+.DescriptionEtNotation p{
+
+    position: relative;
+    top:-20px;
+    padding-left: 15px;
+
+    font-family: 'Raleway';
+    font-size: 11px;
+    font-weight: 300;
+
+}
+.DescriptionEtNotation p span{
+    font-weight: 550;
+}
+.DescriptionEtNotation .etoilesPopulaire{
+    position: absolute;
+    bottom: 10px;
+    z-index: 3;
+    padding-left: 15px;
+
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    color:rgb(66, 87, 248);
+}
+.DescriptionEtNotation .etoilesPopulaire .etoilePopulaireOff{
+    color:rgb(217, 217, 217);
+}
+
+/*LES ACTIVITES A MARSEILLE SECTION */
+.Activités_à_Marseille{
+
+    background-color: rgb(242,242,242,242);
+    border-radius: 14px;
+    width: 1050px;
+    height: 450px;
+    margin-right:33px;
+    margin-bottom: 33px;
+    margin-top: 30px;
+    padding: 27px;
+    overflow: hidden;
+}
+.Les_Activités{
+    display: flex;
+    height: 600px;
+
+}
+.Activités_à_Marseille .Vieux_port{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 360px;
+    width: 200px;
+    background-color: white;
+    margin: 10px;
+
+}
+.Activités_à_Marseille .Vieux_port .CadragePourVieuxPort{
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+
+}
+
+
+.Activités_à_Marseille .Vieux_port img{
+    position: absolute;
+    left:-130px;
+    width: 470px;
+}
+.Activités_à_Marseille .Vieux_port .TitreImage{
+    background-color: white;
+
+}
+
+.Activités_à_Marseille .Vieux_port .TitreImage p{
+    position: absolute;
+    bottom:0px;
+    left: 20px;
+    font-family: 'Raleway';
+    font-size: 12px;
+    font-weight: 550;
+
+}
+
+
