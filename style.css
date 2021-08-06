@@ -369,13 +369,10 @@ input + p{
 /*LES ACTIVITES A MARSEILLE SECTION */
 .Activités_à_Marseille{
 
-    background-color: rgb(242,242,242,242);
     border-radius: 14px;
-    width: 1050px;
+    width: 1130px;
     height: 450px;
-    margin-right:33px;
-    margin-bottom: 33px;
-    margin-top: 30px;
+
     padding: 27px;
     overflow: hidden;
 }
@@ -383,15 +380,26 @@ input + p{
     display: flex;
     height: 600px;
 
+
+}
+.Activités_à_Marseille h2{
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: 550;
+
+
 }
 .Activités_à_Marseille .Vieux_port{
+
+    box-shadow: 0px 1px 3px 0px #888888;
     display: flex;
     flex-direction: column;
     position: relative;
     border-radius: 14px;
     overflow: hidden;
     height: 360px;
-    width: 200px;
+    width: 23%;
+    
     background-color: white;
     margin: 10px;
 
@@ -406,22 +414,173 @@ input + p{
 
 .Activités_à_Marseille .Vieux_port img{
     position: absolute;
-    left:-130px;
-    width: 470px;
+    left:-150px;
+    width: 560px;
 }
 .Activités_à_Marseille .Vieux_port .TitreImage{
     background-color: white;
 
 }
 
-.Activités_à_Marseille .Vieux_port .TitreImage p{
+.deuxiem_colone{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+.Activités_à_Marseille .FortDePomègues{
+
+  box-shadow: 0px 1px 3px 0px #888888;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 180px;
+
+    background-color: white;
+    margin: 10px;
+
+}
+.Activités_à_Marseille .FortDePomègues .CadrageFortDePomègues{
+
+    height: 280px;
+    overflow: hidden;
+    position : relative;
+}
+
+.Activités_à_Marseille .FortDePomègues img{
     position: absolute;
-    bottom:0px;
-    left: 20px;
+    top:-100px;
+    left: 0px;
+    width: 250px;
+}
+.Activités_à_Marseille .îles_du_Frioul{
+
+  box-shadow: 0px 1px 3px 0px #888888;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 155px;
+    background-color: white;
+    margin: 10px;
+
+}
+
+.Activités_à_Marseille .îles_du_Frioul .CadrageDuFrioul{
+
+    height: 280px;
+    overflow: hidden;
+    position : relative;
+}
+
+.Activités_à_Marseille .îles_du_Frioul img{
+    position: absolute;
+    left: 0px;
+    width: 250px;
+}
+.TitreImage p{
+
     font-family: 'Raleway';
     font-size: 12px;
     font-weight: 550;
+    padding-left: 15px;
 
+}
+
+.Activités_à_Marseille .Parc_National_des_calanques{
+
+  box-shadow: 0px 1px 3px 0px #888888;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 360px;
+    width: 23%;
+    background-color: white;
+    margin: 10px;
+
+}
+.Activités_à_Marseille .Parc_National_des_calanques .CadrageCalanques{
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+
+}
+
+
+.Activités_à_Marseille .Parc_National_des_calanques img{
+    position: absolute;
+    left:-130px;
+    width: 470px;
+}
+.Activités_à_Marseille .Parc_National_des_calanques .TitreImage{
+    background-color: white;
+
+}
+.troisieme_colone{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+.Activités_à_Marseille .Notre_Dame_de_la_Garde{
+
+  box-shadow: 0px 1px 3px 0px #888888;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 180px;
+
+    background-color: white;
+    margin: 10px;
+
+}
+.Activités_à_Marseille .Notre_Dame_de_la_Garde .CadrageNotreDame{
+
+    height: 280px;
+    overflow: hidden;
+    position : relative;
+}
+
+.Activités_à_Marseille .Notre_Dame_de_la_Garde img{
+    position: absolute;
+    left: 0px;
+    width: 250px;
+}
+.Activités_à_Marseille .Parc_Longchamp{
+
+    display: flex;
+
+  box-shadow: 0px 1px 3px 0px #888888;
+    flex-direction: column;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 155px;
+    background-color: white;
+    margin: 10px;
+
+}
+
+.Activités_à_Marseille .Parc_Longchamp .CadrageParc_Longchamp{
+
+    height: 280px;
+    overflow: hidden;
+    position : relative;
+}
+
+.Activités_à_Marseille .Parc_Longchamp img{
+    position: absolute;
+    top:-30px;
+    left:0px;
+    width: 240px;
 }
 
 
