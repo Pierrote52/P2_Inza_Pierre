@@ -2,9 +2,6 @@
     font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf');
 }
-.corps{
-    padding:2%;
-}
 .NavMobil{
     display:none
 }
@@ -175,7 +172,7 @@ input + a{
     border-width: 1px;
     border-color: rgb(217, 217, 217);
     font-size: 13px;
-    padding: 5px;
+    padding: 5px 5px 5px 5px ;
     transition: transform 400ms;
 
 
@@ -193,7 +190,7 @@ input + a{
     background-color: rgb(242,242,242,242);
     border-radius: 14px;
     width: 100%;
-    margin-right:33px;
+    margin-right:33px ;
 
 }
 
@@ -323,29 +320,37 @@ input + a{
 /* ICI COMMENCE LE CSS POUR LE ASIDE DES HEBERGEMENTS POPULAIRES*/
 
 .Hebergements_populaires{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 35px;
     background-color: rgb(242, 242, 242);
     height: 630px;
+    width: 60%;
     border-radius: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
 
 /*Titre du Aside pour les hebergements populaires*/
 
 .titrePopulaire{
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: baseline;
+    justify-content: space-between;
 }
 .titrePopulaire h2{
-    
-
+    margin-left: 20%;
     font-family: 'Raleway';
     font-size: 18px;
     font-weight: 530;
 }
 .titrePopulaire .fas{
+    padding-right: 40px;
     font-size: 18px;
+
 }
 /* Vignette dans le Aside*/
 

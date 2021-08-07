@@ -139,19 +139,30 @@ input + a{
     width: 100%;
 }
 .titrePopulaire{
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
-    position: relative
+    position: relative;
+    width: auto;
 
 
 }
-.Hebergements_populaires .titrePopulaire h2{
+
+.titrePopulaire .fas{
+    margin-right: none;
+    font-size: 18px;
+
+}
+.titrePopulaire h2{
     text-align: left;
     font-size: 50px;
     font-weight: bolder;
     margin-bottom: 40%;
     padding: none;
 
+}
+.Hebergements_populaires a{
+    margin-top: 90px;
+    transform: none
 }
 .Hebergements_populaires .titrePopulaire a i{
     position: absolute;
@@ -226,6 +237,7 @@ input + a{
     flex-direction: column;
     align-items: center;
     height: 3500px;
+    padding:0;
 
 }
 .Activités_à_Marseille .Les_Activités{
@@ -275,6 +287,7 @@ input + a{
 
 }
 .Les_Activités{
+
     margin-top: 200px;
     margin-bottom: 10%;
     transform: scale(1.4);
@@ -291,5 +304,10 @@ footer .coloneFooter .TitreColone{
 }
 footer .coloneFooter {
     margin-bottom: 70px;
+
+}
+
+.Activités_à_Marseille .Les_Activités figure{
+    margin-right: 0px
 
 }
