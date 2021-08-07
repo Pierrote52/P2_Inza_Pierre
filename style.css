@@ -2,6 +2,9 @@
     font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf');
 }
+.corps{
+    padding:2%;
+}
 .NavMobil{
     display:none
 }
@@ -109,7 +112,7 @@ input + a{
 }
 .lesVignettes{
     display: flex;
-    flex-direction: row;justify-content: flex-start;
+    flex-direction: row;
 }
 .vignette{
     margin: 20px;
@@ -172,7 +175,7 @@ input + a{
     border-width: 1px;
     border-color: rgb(217, 217, 217);
     font-size: 13px;
-    padding: 5px 5px 5px 5px ;
+    padding: 5px;
     transition: transform 400ms;
 
 
@@ -189,14 +192,15 @@ input + a{
 .Hebergements_Marseille{
     background-color: rgb(242,242,242,242);
     border-radius: 14px;
-    margin-right:33px ;
+    width: 100%;
+    margin-right:33px;
 
 }
 
 .Hebergements_Marseille h2{
     padding: 35px;
     font-size:19px;
-    font-weight: 550;
+    font-weight: 559;
     font-family: 'Raleway';
 
 }

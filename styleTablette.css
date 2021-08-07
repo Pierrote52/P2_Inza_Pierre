@@ -1,0 +1,165 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.DesktopNav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .Inscription{
+    color:rgb(66, 87, 248);
+    font-weight: 600;
+}
+nav{
+    font-size: 40px;
+}
+h1{
+    text-align: center;
+    margin-top:20px;
+    font-size: 40px;
+}
+h1 + p{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Raleway';
+    font-size: 30px;
+}
+.barre_recherche{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    transform: scale(1.5);
+    border-width: 0;
+    width: 40%;
+    margin-bottom: 10%;
+}
+
+.FiltresBar{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.FiltresBar .titreFiltre{
+    font-size: 50px;
+    text-align: center;
+}
+.FiltresBar .lesVignettes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+.vignette{
+    transform: scale(2);
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+.logements_count{
+    font-size: xx-large;
+
+}
+.logements_count i{
+    font-size: 40px;
+    padding: 30px;
+}
+.premier_section_plus_aside{
+    display:flex;
+    flex-direction: column;
+}
+.Hebergements_Marseille{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Hebergements_Marseille h2{
+    font-size: 40px;
+}
+.LesHebergementsGrille{
+    display: flex;
+    justify-content: space-between;
+
+}
+.LesHebergementsGrille article{
+    transform: scale(1.22);
+    margin-bottom: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.Hebergements_populaires{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1030px;
+}
+.Hebergements_populaires .titrePopulaire h2{
+    font-size: 40px;
+}
+.Hebergements_populaires .titrePopulaire i{
+    font-size: 20px;
+    margin-left: 200px;
+}
+.Hebergements_populaires a{
+    margin-top: 90px;
+    transform: scale(2);
+}
+
+
+
+
+
+.Activités_à_Marseille{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+    padding: 97px;
+}
+.Les_Activités{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.Activités_à_Marseille #Activités{
+    font-size: 40px;
+}
+.TitreImage p{
+    font-size: 20px;
+}
+.Activités_à_Marseille .Les_Activités figure{
+    margin-right: 90px;
+
+}
+.deuxiem_colone{
+    width: 50%;
+}
+.Activités_à_Marseille .deuxiem_colone .FortDePomègues  img{
+    left:0px;
+    top:-180px;
+    width: 300px;
+    
+}
+.Activités_à_Marseille .deuxiem_colone .îles_du_Frioul  img{
+    left:0px;
+    top:-40px;
+    width: 300px;
+    
+}
+.troisieme_colone{
+    width: 50%;
+
+}
+.Activités_à_Marseille .troisieme_colone .Notre_Dame_de_la_Garde  img{
+    width: 300px;
+}
+
