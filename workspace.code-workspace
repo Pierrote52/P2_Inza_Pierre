@@ -1,13 +1,10 @@
 {
 	"folders": [
 		{
-			"name": "P02_INZA_PIERRE",
 			"path": "."
-		},
-		{
-			"name": "Raleway",
-			"path": "../../../../../Downloads/Raleway"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "P02_INZA_PIERRE"
+	}
 }
