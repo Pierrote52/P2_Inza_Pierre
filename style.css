@@ -280,6 +280,7 @@ input + a{
 
     padding: 0em;
     margin: 0em;
+    font-weight: normal;
 
     padding-top: 0.5em;
 
@@ -287,6 +288,11 @@ input + a{
 
     font-family: 'Raleway';
     font-size: 12px;
+
+}
+.LesHebergementsGrille article .Informations h3 span{
+
+    font-weight: 600;
 
 }
 
@@ -579,6 +585,9 @@ input + a{
 .DescriptionEtNotation p{
     font-family: 'Raleway';
     font-size: 12px;
+}
+.DescriptionEtNotation p span{
+    font-weight: 600;
 }
 
 
