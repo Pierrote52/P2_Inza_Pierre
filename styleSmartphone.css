@@ -101,7 +101,7 @@ input{
     transform: scale(2.4);
     margin-right:10em;
     margin-left: 10em;
-    margin-bottom: 4em;
+    margin-bottom: 8em;
 
 
 }
@@ -111,12 +111,13 @@ input{
     color: rgb(66, 87, 248);
     background-color: rgb(224, 234, 254);
     margin-right:10px;
-    padding: 1.4em;
     border-radius: 40px;
     font-size: 1.1em;
     font-size: 1.3em;
 }
-
+.derniereVignette{
+    margin-left: 35px;
+}
 
 
 
