@@ -3,7 +3,7 @@
     <meta charset="utf-8"/>
     <title>Reservia</title>
     
-    <link rel = "stylesheet" href= "style.css" />
+    <link rel = "stylesheet" href= "style.css"/>
     <link rel= "stylesheet" media= "screen and (min-device-width: 500px) and (max-device-width: 900px)" href= "styleTablette.css"/>
     <link rel= "stylesheet" media= "screen and (max-device-width: 499px)" href= "styleSmartphone.css"/>
 
@@ -11,21 +11,23 @@
 
 
     <script src="https://kit.fontawesome.com/3d79397626.js" crossorigin="anonymous"></script>
+    <link href="css/fontawesome-all.css" rel="stylesheet">
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
     <link rel="stylesheet "href= "css/all.min.css">
     
+    
 
 </head>
 <body>
     <div class = 'corps'>
-    <header>
-        <a href=""><img src = 'images/logo/Reservia@3x.png' alt = 'logo de Reserva'/></a>
+    <header class = 'Header'>
+        <a class = 'LogoReservia'href=""><img src = 'images/logo/Reservia@3x.png' alt = 'logo de Reserva'/></a>
         <nav class = "DesktopNav">
-            <p class = "hebergement"><a href ="#Hebergement">Hebergements</a></p>
+            <p class = "hebergement"><a href ="#Hebergement">Hébergements</a></p>
             <p class = "activités"><a href="#Activités">Activités</a></p>
-            <a href = ""><p class ="Inscription">S'inscrire</p></a>
+            <p class ="Inscription"><a href = "">S'inscrire</a></p>
         </nav>
         
 
@@ -35,11 +37,11 @@
         <p class= "Activités"><a  href="#Activités">Activités</a></p>
     </nav>
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre ville ou en pleine nature</p>
+    <div class = 'sousTitre'><p >En plein centre ville ou en pleine nature</p></div>
     <div class="barre_recherche">
         <i class="fas fa-map-marker-alt"></i>
         <input type="text" value="Marseille, France"/>
-        <a href = ""><p class = "recherche">Rechercher</p></a>
+        <a class = "recherche"href = ""><p class = "recherche">Rechercher</p></a>
         <a class = "displayLoupe" href= ""><i class="fas fa-search"></i></a>
 
     </div>
@@ -53,6 +55,9 @@
     </div>
     </div>
     <h2 class= 'logements_count'><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</h2>
+
+
+    
     <div class = "premier_section_plus_aside">
     <section class = "Hebergements_Marseille">
         <h2 id = "Hebergement">Hébergements à Marseille</h2>
@@ -74,7 +79,8 @@
                 </div>
                 </div>
             </article></a>
-            <a href = ""><article>
+            <a href = "">
+                <article>
                 <div class = "ArticleImage"><img class = "Cannebiere" src="images/hebergements/4_small/hotelDuPort.jpg" alt="Hotel du port"/></div>
                 <div class = "Informations">
                     <div class= "contenueInfo">
@@ -155,10 +161,10 @@
         <h2 class = "dernier"><a href="">Afficher plus</a></h2>
     </section>
     <aside class = "Hebergements_populaires">
-       <div class = "titrePopulaire"><h2>Les plus populaires</h2><a href = ""><i class="fas fa-chart-line"></i></a></div>
-       
+       <div class = "titrePopulaire"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
+            <div class = "LesVignettes">
            <a href = ""><div class ="vignettePopulaire">
-           <img src="images/hebergements/4_small/hotel_le_soleil.jpg" alt="Hotel le soleil du matin"/>
+           <div class="CadreImage"><img src="images/hebergements/4_small/hotel_le_soleil.jpg" alt="Hotel le soleil du matin"/></div>
            <div class = "DescriptionEtNotation"><h2>Hôtel Le soleil du matin</h2>
             <p>Nuit à partir de 128<span>€</span></p>
             <div class="etoilesPopulaire">
@@ -174,7 +180,7 @@
         </div></a>
         <a href = "">
             <div class ="vignettePopulaire">
-            <img src="images/hebergements/4_small/au_coeur_de_l'eau.jpg" alt="au coeur de l'eau"/>
+            <div class="CadreImage"><img src="images/hebergements/4_small/au_coeur_de_l'eau.jpg" alt="au coeur de l'eau"/></div>
             <div class = "DescriptionEtNotation"><h2>Au coeur de l'eau Chambres d'hôtes</h2>
              <p>Nuit à partir de 71<span>€</span></p>
              <div class="etoilesPopulaire">
@@ -191,7 +197,7 @@
        </div>
     </a>
        <a href = ""><div class ="vignettePopulaire">
-        <img class= "ToutBleuEtBlanc" src="images/hebergements/4_small/Tout_bleu_et_blanc.jpg" alt="Hotel tout bleu et blanc"/>
+        <div class = "CadreImage"><img class= "ToutBleuEtBlanc" src="images/hebergements/4_small/Tout_bleu_et_blanc.jpg" alt="Hotel tout bleu et blanc"/></div>
         <div class = "DescriptionEtNotation"><h2>Hôtel Tout bleu et Blanc</h2>
          <p>Nuit à partir de 68<span>€</span></p>
          <div class="etoilesPopulaire">
@@ -206,52 +212,43 @@
      </div>
 
    </div></a>
+</div>
 
     </aside>
     </div>
     <section class = "Activités_à_Marseille">
         <h2 id = "Activités">Activités à marseille</h2>
         <div  class ="Les_Activités">
-            <a href=""><figure class = "Vieux_port">
-                <div class = "CadragePourVieuxPort"><img src="images/activites/3_medium/vieuxPort.jpg" alt = "Photo du vieux Port de Marseille"></div>
-                <figcaption class = "TitreImage">
-                    <p>Vieux Port </p>
-                </figcaption>
-            </figure></a>
-            <div class = "deuxiem_colone">
-                <a href=""><figure class = "FortDePomègues">
-                <div class = "CadrageFortDePomègues"><img src="images/activites/3_medium/Fort_de_Pomègues.jpg" alt = "Photo Fort de Pomègues"></div>
-                <figcaption class = "TitreImage">
-                    <p>Fort de Pomègues</p>
-                </figcaption>
-            </figure></a>
-            <a href=""><figure class = "îles_du_Frioul">
-                <div class = "CadrageDuFrioul"><img src="images/activites/3_medium/Iles_de_Frioul.jpg" alt = "Photo ïles du Frioul "></div>
-                <figcaption class = "TitreImage">
-                    <p>Îles du Frioul</p>
-                </figcaption>
-            </figure></a>
-        </div>
-        <a href=""><figure class = "Parc_National_des_calanques">
-            <div class = "CadrageCalanques"><img src="images/activites/3_medium/Parc_National_des_Calanques.jpg" alt = "Photo des Calanques "></div>
-            <figcaption class = "TitreImage">
-                <p>Parc National des Calanques</p>
-            </figcaption>
-        </figure></a>
-        <div class = "troisieme_colone">
-            <a href=""><figure class = "Notre_Dame_de_la_Garde">
-                <div class = "CadrageNotreDame"><img src="images/activites/3_medium/Notre_Dame_de_la_guarde.jpg" alt = "Photo Notre Dame de la Guarde"/></div>
-                <figcaption class = "TitreImage">
-                    <p>Notre-Dame-de-la-Garde</p>
-                </figcaption>
-            </figure></a>
-            <a href=""><figure class = "Parc_Longchamp">
-                <div class = "CadrageParc_Longchamp"><img src="images/activites/3_medium/Parc_Longchamp.jpg" alt = "Photo Parc Longchamp"/></div>
-                <figcaption class = "TitreImage">
-                    <p>Parc Longchamp</p>
-                </figcaption>
-            </figure></a>
-        </div>
+            <div class = "VieuxPort">
+                <div class = 'ImageCadre'><img  src = 'images/activites/3_medium/vieuxPort.jpg' alt = 'Vieux port de marseille'></div>
+                <h2>Vieux Port</h2>
+
+            </div>
+            <div class = "colone2">
+                <div class ='FortDePomegues'>
+                    <div class = "ImageCadre"><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/></div>
+                    <h2>Fort de Pomègues</h2>
+                </div>
+                <div class = "IlesDuFrioul">
+                    <div class = "ImageCadre"><img src="images/activites/4_small/ilesDeFrioul.jpg" alt="Iles du Frioul"/></div>
+                    <h2>Îles du Frioul</h2>
+                </div>
+            </div>
+            <div class = "ParcNational">
+                <div class = 'ImageCadre'><img src = "images/activites/3_medium/Parc_National_des_Calanques.jpg" alt= "Parc National des Calanques"></div>
+                <h2>Parc National des Calanques</h2>
+            </div>
+            <div class = 'colone3'>
+                <div class = "NotreDame">
+                    <div class = "ImageCadre"><img src = "images/activites/4_small/NotreDameDeLaGarde.jpg"></div>
+                    <h2>Notre-Dame-de-la-Garde</h2>
+                </div>
+                <div class = "Parc_Longchamp">
+                    <div class = "ImageCadre"><img src = "images/activites/4_small/ParkLongChamp.jpg"></div>
+                    <h2>Parc Longchamp</h2>
+                </div>
+            </div>
+
             
 
         </div>

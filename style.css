@@ -2,6 +2,10 @@
     font-family: 'Raleway';
     src: url('Raleway-VariableFont_wght.ttf');
 }
+
+body{
+    min-width:933px ;
+}
 .NavMobil{
     display:none
 }
@@ -32,7 +36,7 @@ a{
   color: black;
     
 }
-nav .Inscription{
+nav .Inscription a{
     color:rgb(66, 87, 248);
     font-weight: 600;
 }
@@ -42,13 +46,13 @@ h1{
     font-size: 20px;
     margin-bottom: 0;
 }
-h1 + p{
+.sousTitre{
     margin-bottom: 35px;
     font-family: 'Raleway';
     font-size: 17px;
 }
 .corps{
-    padding: 3%;
+    padding: 1%;
 }
 
 .barre_recherche{
@@ -112,6 +116,7 @@ input + a{
 .lesVignettes{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .vignette{
     margin: 20px;
@@ -123,11 +128,11 @@ input + a{
     border-left: none;
     border-color: rgb(217, 217, 217);
     height: 50px;
-  transition: transform 400ms ease-in-out 100ms
+  transition: transform 400ms;
 }
 
 .vignette:hover{
-    transform: scale(1.14);
+    transform:scale(1.1);
 }
 .vignette p{
     margin-right: 10px;
@@ -196,18 +201,19 @@ input + a{
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100%;
 }
 .Hebergements_Marseille{
     background-color: rgb(242,242,242,242);
     border-radius: 14px;
-    width: 100%;
-    margin-right:3% ;
     align-items: center;
+    width: 70%;
 
 }
 
 .Hebergements_Marseille h2{
     padding: 35px;
+    padding-bottom: 2em;
     font-size:19px;
     font-weight: 559;
     font-family: 'Raleway';
@@ -219,7 +225,11 @@ input + a{
     flex-wrap: wrap;
     flex-direction: row;
 }
+.LesHebergementsGrille a:hover{
+    transform: scale(1.16);
+}
 .LesHebergementsGrille a{
+    transition: transform 400ms;
     width: 30%;
     margin-right: 2%;
     margin-bottom: 2%;
@@ -239,15 +249,14 @@ input + a{
     height: 150px;
 }
 .LesHebergementsGrille article .ArticleImage{
-    position: relative;
     height: 60%;
     overflow: hidden;
     
 }
 .LesHebergementsGrille article .ArticleImage img{
-    top:-30%;
-    position: absolute;
+    transform: translateY(-20%);
     width: 100%;
+    min-height: 100%;
 }
 .LesHebergementsGrille article .Informations{
     background-color: white;
@@ -277,7 +286,7 @@ input + a{
     padding-bottom: 0.5em;
 
     font-family: 'Raleway';
-    font-size: 10px;
+    font-size: 12px;
 
 }
 
@@ -414,9 +423,11 @@ input + a{
     padding-top: 35px;
     background-color: rgb(242, 242, 242);
     height: 630px;
-    width: 60%;
+    width: 30%;
     border-radius: 14px;
     margin-right: 0em;
+    padding: 0em;
+    margin-left: 3%;
 
 }
 
@@ -426,21 +437,22 @@ input + a{
     width: 100%;
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 .titrePopulaire h2{
-    margin-left: 20%;
+    text-align: center;
     font-family: 'Raleway';
     font-size: 18px;
     font-weight: 530;
 }
 .titrePopulaire .fas{
-    padding-right: 40px;
     font-size: 18px;
 
 }
 /* Vignette dans le Aside*/
-
+/* 
 .vignettePopulaire{
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -523,263 +535,296 @@ input + a{
 }
 .DescriptionEtNotation .etoilesPopulaire .etoilePopulaireOff{
     color:rgb(217, 217, 217);
+} */
+.Hebergements_populaires .LesVignettes .vignettePopulaire {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 1.5em;
 }
+.LesVignettes{
+    width: 100%;
+}
+.vignettePopulaire:hover{
+    transform: scale(1.1);
+}
+.vignettePopulaire{
+    transition: transform 400ms;
+    background-color: white;
+    display: flex;
+    margin: 1em;
+}
+.vignettePopulaire .CadreImage{
+    height: 7em;
+    width: 40%;
+    overflow: hidden;
+
+}
+
+.vignettePopulaire .CadreImage img{
+    height: 100%;
+
+}
+.vignettePopulaire .DescriptionEtNotation{
+    padding-left: 1em;
+    width: 60%;
+    
+}
+.vignettePopulaire .DescriptionEtNotation h2{
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+.DescriptionEtNotation p{
+    font-family: 'Raleway';
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+.etoilesPopulaire{
+    padding-top: 2em;
+    font-size: 10px;
+    display: flex;
+    color:rgb(66, 87, 248);
+
+
+}
+.etoilesPopulaire .etoilePopulaireOff{
+    color: rgb(217, 217, 217)
+}
+
+
 
 /*LES ACTIVITES A MARSEILLE SECTION */
-.Les_Activités_à_Marseille{
-    height: 50%;
-    overflow: hidden;
-}
+
 .Activités_à_Marseille h2{
-    margin-top: 2em;
-    width: 100%;
+    font-family: 'Raleway';
+    font-size: 19px
 }
-.Les_Activités{
-    position: relative;
-    background-color: blue;
+
+.Les_Activités {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    height: 23em;
+
+}
+
+
+.VieuxPort:hover{
+    transform:scale(1.1)
+}
+.VieuxPort{
+    transition: transform 400ms;
+
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    height: 29em;
-    
-
+    border-radius: 14px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 24%;
 }
-
-.TitreImage p{
-    margin-top: 0%;
-}
-
-
-.Les_Activités a{
-    width: 25%;
+.VieuxPort .ImageCadre{
+    overflow: hidden;
+    flex: 4;
     height: 90%;
-    border-radius: 14px;
-    overflow: hidden;
-    margin-inline-start: 0%;
 }
-
-
-.Les_Activités a{
-    margin-left: 2%;
-}
-.Les_Activités a .Vieux_port{
+.VieuxPort .ImageCadre img{
     height: 100%;
-    width: 100%;
-    margin-left: 0%;
-    margin-bottom: 0%;
 }
-.Les_Activités a .Vieux_port .TitreImage{
-    height: 10%;
-
-
-    background-color: white;
-}
-
-
-.Les_Activités .Vieux_port .CadragePourVieuxPort{
-    overflow: hidden;
-    height: 87%;
-
-border-top-left-radius: 14px ;
-border-top-right-radius:14px;
-}
-.Les_Activités .Vieux_port .CadragePourVieuxPort img{
-height: 100%;
-padding-bottom: 0;
-}
-
-
-
-
-
-
-.Les_Activités .deuxiem_colone{
-    width: 25%;
-    height: 100%;
-    overflow: hidden;
-
-}
-.deuxiem_colone .FortDePomègues{
-    height: 40%;
-    width: 95%;
-    overflow: hidden;
-    border-radius: 14px;
-    margin-inline-start: 5%;
-}
-.FortDePomègues p{
-    height: 20%;
-    width: 100%;
-    background-color: white;
-    padding-bottom: 10px;
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius:14px
-}
-.deuxiem_colone .FortDePomègues .CadrageFortDePomègues{
-    position: relative;
-    height: 80%;
-    width: 100%;
-    overflow: hidden;
-    padding-left: 0;
-}
-.deuxiem_colone .FortDePomègues img{
-    position: absolute;
-    max-width: 100%;
-    min-height: 100%;
-
-}
-.deuxiem_colone .FortDePomègues figcaption{
-    font-size: 20px;
-    margin-top: 0;
-}
-.deuxiem_colone .îles_du_Frioul{
-    overflow: hidden;
-    padding-left: 0%;
-    height: 43%;
-    width: 95%;
-
-    margin-inline-start: 5%;
-    border-radius: 14px;
-}
-.CadrageDuFrioul{
-    overflow: hidden;
-    height: 80%;
-}
-.CadrageDuFrioul img{
-    width: 100%;
-    min-height: 100%;
-}
-.îles_du_Frioul .TitreImage p{
-    margin-bottom: 0;
-    background-color: white;
-    font-size: 20px;
-    height: 90px;
-
-}
-
-
-
-
-
-
-.Parc_National_des_calanques{
-    margin-left: 0em;
-    margin-right: 0em;
-    overflow: hidden;
-    height: 100%;
-    
-}
-.Parc_National_des_calanques .CadrageCalanques{
-    height: 85%;
-    overflow: hidden;
-    border-top-right-radius: 14px;
-    border-top-left-radius: 14px;
-}
-.CadrageCalanques img{
-    transform: translate(-50%,-50%);
-    min-height: 100%;
-}
-.Parc_National_des_calanques .TitreImage {
-    font-size: 20px;
-    height: 20%;
-background-color: white;
-}
-
-
-
-
-
-
-
-.troisieme_colone .Notre_Dame_de_la_Garde{
-    margin-left: 0em;
-}
-
-.CadrageCalanques{
-    background-color: aliceblue;
-    overflow: hidden;
-}
-.CadrageCalanques{
-    margin: 0;
-}
-
-
-
-
-
-
-
-
-
-.CadrageNotreDame{
-    width: 100%;
-    min-height: 50%;
-    overflow: hidden;
-    background-color: white;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
-
-}
-.CadrageNotreDame img{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.VieuxPort h2{
     margin: 0em;
-}
-.Notre_Dame_de_la_Garde .TitreImage{
-    margin-top: 0em;
-    background-color: white;
-    border-bottom-left-radius: 14px;
-
-    border-bottom-right-radius: 14px;
-}
-.Notre_Dame_de_la_Garde .TitreImage p{
-    height: 20px;
-    padding-bottom: 0.5em;
-}
-
-
-
-
-.troisieme_colone .Parc_Longchamp{
     margin-top: 1em;
-    margin-left: 0em;
+    margin-bottom: 0.5em;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 1em;
 }
-.CadrageParc_Longchamp{
 
-    width: 100%;
+
+.colone2 {
+    width: 24%;
+}
+.FortDePomegues:hover{
+    transform: scale(1.1)
+
+}
+.FortDePomegues{
+    transition: transform 400ms;
+
     overflow: hidden;
-    background-color: white;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    border-radius: 14px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 50%;
+    margin-bottom: 5%;
 }
-.CadrageParc_Longchamp img{
-    width: 100%;
-
-}
-.Parc_Longchamp .TitreImage{
-    background-color: white;
-    border-bottom-left-radius: 14px;
-
-    border-bottom-right-radius: 14px;
-    background-color: white;
-}
-.Parc_Longchamp .TitreImage p{
-    padding-bottom: 1em;
-
-    height: 20px;
-}
-
-
-
-
-
-
-
-
-.Les_Activités .troisieme_colone{
-    width: 25%;
+.FortDePomegues .ImageCadre{
     overflow: hidden;
+    height:  80%;
 }
+.FortDePomegues .ImageCadre img{
+    transform: translateY(-30%);
+    width: inherit;
+    width: 100%;
+    min-height: 100%;
+}
+
+.FortDePomegues h2{
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+
+.IlesDuFrioul:hover{
+    transform: scale(1.1);
+}
+.IlesDuFrioul{
+
+    transition: transform 400ms;
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.IlesDuFrioul .ImageCadre{
+    overflow: hidden;
+    flex: 4;
+    height: 60%;
+}
+.IlesDuFrioul .ImageCadre img{
+    width: 100%;
+}
+.IlesDuFrioul h2{
+    flex:1;
+    margin: 0em;
+    padding-top: 1em;
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+
+
+.ParcNational:hover{
+    transform: scale(1.1)
+}
+.ParcNational{
+    transition: transform 400ms;
+    display: flex;
+    flex-direction: column;
+    width: 24%;
+
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.ParcNational .ImageCadre{
+    flex:4;
+    overflow: hidden;
+    height: 80%;
+
+}
+.ParcNational .ImageCadre img{
+    transform: translate(-50%,-50%);
+}
+.ParcNational h2{
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 1em;
+    margin: none;
+}
+
+.colone3{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.NotreDame:hover{
+    transform: scale(1.1);
+}
+.NotreDame{
+
+    transition: transform 400ms;
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.NotreDame .ImageCadre{
+    overflow: hidden;
+    flex:4;
+    height: 60%;
+}
+.NotreDame .ImageCadre img{
+    width: 100%;
+}
+.NotreDame h2{
+
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 1em;
+}
+.Parc_Longchamp:hover{
+    transform: scale(1.1);
+}
+.Parc_Longchamp{
+
+    transition: transform 400ms;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.Parc_Longchamp .ImageCadre{
+    overflow: hidden;
+    flex:4;
+    height: 60%;
+}
+.Parc_Longchamp .ImageCadre img{
+    width: 100%;
+    transform: translateY(-20%);
+}
+.Parc_Longchamp h2{
+
+
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+
+
+
+
+
+
 footer{
     display: flex;
     background-color: rgb(242,242,242,242);
@@ -796,7 +841,7 @@ footer{
 
 }
 .TitreColone{
-    font-weight: 550;
+    font-weight: 600;
 }
 
  
