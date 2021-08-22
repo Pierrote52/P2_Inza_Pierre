@@ -8,6 +8,7 @@ body{
     margin-right: auto;
     max-width: 1480px;
     min-width:933px ;
+    margin-bottom: 0em;
 }
 .NavMobil{
     display:none
@@ -37,6 +38,18 @@ a{
   outline: none;
   text-decoration: none;
   color: black;
+    
+}
+.DesktopNav .activités :hover{
+    Color : #0065FC;
+    Text-decoration : revert;
+    Font-weight :bold;
+    
+}
+.DesktopNav .hebergement :hover{
+    Color : #0065FC;
+    Text-decoration : revert;
+    Font-weight :bold;
     
 }
 nav .Inscription a{
