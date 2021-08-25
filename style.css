@@ -42,13 +42,11 @@ a{
 }
 .DesktopNav .activités :hover{
     Color : #0065FC;
-    Text-decoration : revert;
     Font-weight :bold;
     
 }
 .DesktopNav .hebergement :hover{
     Color : #0065FC;
-    Text-decoration : revert;
     Font-weight :bold;
     
 }
@@ -97,7 +95,7 @@ input{
     padding: 15px;
     font-family: 'Raleway';
     font-size: 18px;
-    font-weight: 580;
+    font-weight: 600;
     height: 50px;
     width: 180px;
     border: none;
@@ -108,7 +106,7 @@ input + a{
     justify-content: center;
     font-family: 'Raleway';
     font-size: 16px;
-    font-weight: 440;
+    font-weight: 400;
     color: white;
     height: 200px;
     width: 420px;
@@ -169,7 +167,7 @@ input + a{
     margin-right:10px;
     padding: 18px;
     border-radius: 40px;
-    font-weight: 350;
+    font-weight: 300;
     width: 20px;
 }
 .logements_count {
@@ -229,9 +227,10 @@ input + a{
 
 .Hebergements_Marseille h2{
     padding: 35px;
+    padding-left: 2.4%;
     padding-bottom: 2em;
     font-size:19px;
-    font-weight: 559;
+    font-weight: 500;
     font-family: 'Raleway';
 
 }
@@ -459,7 +458,8 @@ input + a{
     width: 100%;
     display: flex;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
+
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -467,10 +467,12 @@ input + a{
     text-align: center;
     font-family: 'Raleway';
     font-size: 18px;
-    font-weight: 530;
+    font-weight: 500;
+    margin-left: 5%;
 }
 .titrePopulaire .fas{
     font-size: 18px;
+    margin-right: 6%;
 
 }
 /* Vignette dans le Aside*/
@@ -770,7 +772,6 @@ input + a{
     font-weight: 600;
     font-size: 1em;
     margin-left: 1em;
-    margin: none;
 }
 
 .colone3{
